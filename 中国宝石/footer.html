@@ -1,0 +1,41 @@
+<footer class="clearfix">
+	<div class="content">
+		<div class="footer_nav">
+			<a href="#">关于我们|</a>
+			<a href="#">经典案例|</a>
+			<a href="#">新闻动态|</a>
+			<a href="#">服务项目|</a>
+			<a href="#">咨询团队|</a>
+			<a href="#">联系我们|</a>
+			  
+		</div>
+		<p><a href="#">www.zgbsw8.com</a>版权所有. </p>
+		<p>中国宝石网</p>
+	</div>
+</footer>
+<div class="scroll_top">
+			<img src="img/bottom_16.jpg" />
+</div>
+<script>
+		/* 回到顶部*/
+	$(document).ready(function() {
+	    //当滚动条的位置处于距顶部800像素以下时，跳转链接出现，否则消失
+	    $(function() {
+	      $(window).scroll(function() {
+	        if ($(window).scrollTop() >500) {
+	          $(".scroll_top").fadeIn(1000);
+	        } else {
+	          $(".scroll_top").fadeOut(1000);
+	        }
+	      });
+	      //当点击跳转链接后，回到页面顶部位置
+	      $(".scroll_top").click(function() {
+	        $('body,html').animate({
+	          scrollTop: 0
+	        },
+	        300);
+	        return false;
+	      });
+	    });
+	 });
+</script>
